@@ -1,0 +1,13 @@
+{
+  "name": "My Original Extension",
+  "description": "Delete Style Of Box Shadow.",
+  "version": "0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["<all_urls>"],
+      "js": ["block_shadow.js"]
+    }
+  ]
+}
